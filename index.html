@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع الإستمارة </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="principal">
+        <div>
+            <p>
+                هذه ليست خدمة حقيقية.
+            </p>
+            <p>
+                أنت تعلم أنك تحتاج شيئا مثل هذا في حياتك ليساعدك على تحقيق احلامك و طموحاتك <br>
+                شارك لتبدأ المشوار.
+            </p>
+            <p>
+                أنت تعلم انك تريد هذا. 
+            </p>
+        </div>
+        <form action="" >
+            <fieldset>
+                <legend> إشترك الآن  </legend>
+                <dir class="inputs">
+                    <label for="first-name">الإسم : <span>*</span>
+                        <input  type="text" name="first-name" id="first-name" maxlength="30" minlength="3" required oninvalid="this.setCustomValidity('رجاء ادخل اسما من ثلاثة حروف أو أكثر')">
+                    </label>
+                </dir>
+                <dir class="inputs">
+                    <label for="last-name">اللقب : <span>*</span>
+                        <input  type="text" name="last-name" id="last-name" maxlength="30" minlength="3" required >
+                    </label>
+                </dir>
+                <dir class="inputs">
+                    <label for="email">البريد الإلكتروني : <span>*</span>
+                        <input  type="email" id="email"  required >
+                    </label>
+                </dir>
+                <dir class="inputs">
+                    <label for="tel">رقم الهاتف : <span>*</span>
+                        <input  type="tel" id="tel"  required  minlength="10" maxlength="10" >
+                    </label>
+                </dir>
+                <dir class="inputs">
+                    <label for="password">كلمة المرور : <span>*</span>
+                        <input  type="password" id="password" maxlength="30" minlength="3" required >
+                    </label>
+                </dir>
+                <dir class="inputs">
+                    <label for="confirm-password">تأكيد كلمة المرور : <span>*</span>
+                        <input  type="password" id="confirm-password" maxlength="30" minlength="3" required >
+                    </label>
+                </dir>
+            </fieldset>
+            <dir class="subbut">
+                <button type="submit">إنشاء حساب جديد</button>
+            </dir>
+            <p>
+                إذا كنت تملك حسابا سجل الدخول من 
+                <span>
+                    <a href="">هنا</a>
+                </span>
+            </p>
+        </form>
+    </div>
+    <div class="sidbar">
+        <img id="odin" src="./images/odin-lined.png" alt="">
+        <p>O <br> D <br> I <br> N</p>
+    </div>
+    
+</body>
+</html>
